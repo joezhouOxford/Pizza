@@ -1,0 +1,36 @@
+<div class="panel panel-success">
+    <div class="panel-heading">
+        Select your ingredient
+    </div>
+    <div class="panel-body">
+        <div class="btn-group">
+            <!--<button type="button" class="btn btn-default" ng-class="{disabled: search === null}" ng-click="search = null">All</button>-->
+            <button type="button" class="btn btn-default" ng-click="search.type = 'base'">Select Base</button>
+            <button type="button" class="btn btn-default" ng-click="search.type = 'topping'">Select Toppings</button>
+        </div>
+        <hr/>
+        <div class="alert alert-warning" ng-show="pizza.showErrorMessage">
+            <a class="close" href="#" ng-click="pizza.showErrorMessage = false">&times;</a>
+            <strong> {{pizza.errorMessage}}</strong>
+        </div>
+        <div ng-repeat="ingredient in list | filter: search||{type:'base'}">
+            <div class="pull-right">
+                <div class="price">£ {{ingredient.price}}</div>
+                <button type="button" ng-click="pizza.add(ingredient)"
+                        class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Add
+                </button>
+            </div>
+            <h3>
+                {{ingredient.name}}
+                <span class="label label-warning" ng-show="ingredient.portions">up to {{ingredient.portions}} portions of toppings</span>
+            </h3>
+
+
+            <hr ng-hide="$last"/>
+        </div>
+    </div>
+</div>
+
+

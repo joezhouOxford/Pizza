@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "type": "base",
+    "name": "Tomato Small",
+    "price": 5,
+    "portions": 3
+  },
+  {
+    "id": 2,
+    "type": "base",
+    "name": "Tomato Large",
+    "price": 10,
+    "portions": 5
+  },
+  {
+    "id": 3,
+    "type": "topping",
+    "name": "mozzarella cheese",
+    "price": 1,
+    "portion": 1
+  },
+  {
+    "id": 4,
+    "type": "topping",
+    "name": "mushrooms",
+    "price": 1,
+    "portion": 1
+  },
+  {
+    "id": 5,
+    "type": "topping",
+    "name": "onion",
+    "price": 1,
+    "portion": 1
+  },
+  {
+    "id": 6,
+    "type": "topping",
+    "name": "ham",
+    "price": 2,
+    "portion": 1
+  },
+  {
+    "id": 7,
+    "type": "topping",
+    "name": "tuna",
+    "price": 3,
+    "portion": 1
+  },
+  {
+    "id": 8,
+    "type": "topping",
+    "name": "basil",
+    "price": 1,
+    "portion": 1
+  }
+]
