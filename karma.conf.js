@@ -9,8 +9,8 @@ module.exports = function (config) {
             'app/bower/angular-mocks/angular-mocks.js',
             'app/components/**/*.js'
             /*,
-            'app/pizza/!**!/!*.js',
-            'app/purchase/!**!/!*.js'*/
+             'app/pizza/!**!/!*.js',
+             'app/purchase/!**!/!*.js'*/
         ],
 
         autoWatch: true,
@@ -23,7 +23,8 @@ module.exports = function (config) {
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
-            'karma-junit-reporter'
+            'karma-junit-reporter',
+            'karma-teamcity-reporter'
         ],
 
         junitReporter: {
