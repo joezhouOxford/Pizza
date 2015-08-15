@@ -15,5 +15,9 @@ exports.config = {
 
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
+  },
+  onPrepare: function() {
+    var reporters=require('jasmine-reporters');
+    jasmine.getEnv().addReporter(new reporters.TeamCityReporter());
   }
 };
