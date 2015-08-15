@@ -4,7 +4,7 @@ var app = angular.module('pizza', ['ngRoute', 'ngResource','myApp.version']);
 
 app.config(function ($routeProvider) {
   $routeProvider
-      .when('/', {
+      .when('/pizza', {
         templateUrl: 'pizza/Ingredient.html',
         controller: 'IngredientCtrl'
       })
@@ -14,6 +14,6 @@ app.config(function ($routeProvider) {
       })
 
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/pizza'
       });
 });
