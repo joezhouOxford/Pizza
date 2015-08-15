@@ -1,8 +1,4 @@
-var express = require('express'),
-    app = express();
-
-app.use(express.static(__dirname));
-app.get('/app', function(req, res) {
-    res.sendfile('index.html', {root: __dirname })
-});
-var server = app.listen(process.env.PORT || 80);
+var express = require('express');
+var app = express();
+app.use(express.static(__dirname + '/app'));
+app.listen(process.env.PORT || 3000);
