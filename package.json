@@ -19,7 +19,7 @@
     "jasmine-reporters": "<2.0.0"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "postinstall": "node_modules/bower/bin/bower install",
     "prestart": "npm install",
     "start": "http-server -a localhost -p 63342 -c-1",
     "pretest": "npm install",
