@@ -1,4 +1,4 @@
-the test project demo an complete setup of continues integration and delivery with the build server in azure.
+This  project demo an complete setup of continues integration and delivery with the build server in azure.
 
 Let me know your github username and I can add you into the contributors so you can do a push to trigger the CI and delivery process
 
@@ -11,7 +11,7 @@ The workflow which automated with above best practice is as follow
 2. trigger integration tests (unit and e2e tests) with teamcity.
 3. after integration tests passes, deploy and change go live
 
-The teamcity url is http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview
+The teamcity url is <a href="http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview">http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview</a>
 the deployed app is at http://137.116.198.227:8000/
 
 I was going to use webpack (like grunt) as dependency management tool and has run out of time.
