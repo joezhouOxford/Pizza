@@ -11,7 +11,7 @@ The workflow which automated with above best practice is as follow
 2. trigger integration tests (unit and e2e tests) with teamcity.
 3. after integration tests passes, deploy and change go live
 
-The teamcity url is <a href="http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview">http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview</a>
+The teamcity url is http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview
 username:admin
 password:password01
 
