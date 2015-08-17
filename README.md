@@ -18,4 +18,3 @@ password:password01
 the deployed app is at http://137.116.198.227:8000/
 
 I was going to use webpack (like grunt) as dependency management tool and has run out of time.
-
