@@ -9,7 +9,7 @@ exports.config = {
         'browserName': 'chrome'
     },
 
-    baseUrl: 'http://localhost:63342/Pizza/app/',
+    baseUrl: 'http://localhost:63342/app/',
 
     framework: 'jasmine',
 
