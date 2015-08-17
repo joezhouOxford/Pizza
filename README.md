@@ -12,6 +12,9 @@ The workflow which automated with above best practice is as follow
 3. after integration tests passes, deploy and change go live
 
 The teamcity url is <a href="http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview">http://137.116.198.227:1111/project.html?projectId=PizzaCI&tab=projectOverview</a>
+username:admin
+password:password01
+
 the deployed app is at http://137.116.198.227:8000/
 
 I was going to use webpack (like grunt) as dependency management tool and has run out of time.
