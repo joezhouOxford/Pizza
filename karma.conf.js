@@ -8,8 +8,9 @@ module.exports = function (config) {
             'app/bower/angular-route/angular-route.js',
             'app/bower/angular-mocks/angular-mocks.js',
             'app/components/**/*.js'
-            /*,
-             'app/pizza/!**!/!*.js',
+            ,
+             'app/pizza/**/*.js',
+            /*
              'app/purchase/!**!/!*.js'*/
         ],
 

@@ -2,20 +2,26 @@
 
 describe('myApp.pizza module', function () {
 
-    beforeEach(module('myApp.pizza'));
+    beforeEach(function(){
+        module('pizza.Ingredient');
+        module('pizza.Pizza');
+    });
 
     describe('pizza controller', function () {
 
         it('should ....', inject(function ($controller) {
+            var ingredientCtrl,scope;
             //spec body
-            var ingredientCtrl = $controller('IngredientCtrl');
+            inject(function ($controller, $rootScope) {
+                 scope = $rootScope.$new(); //get a childscope
+                 var pizzaIngredient={};
+                 pizzaIngredient.query=function(){};
+                 ingredientCtrl = $controller('IngredientCtrl',{$scope:scope,PizzaIngredient:pizzaIngredient,Pizza:null});
+            })
+
             expect(ingredientCtrl).toBeDefined();
         }));
-        it('should ....', inject(function ($controller) {
-            //spec body
-            var ingredientCtrl = $controller('IngredientCtrl');
-            expect(ingredientCtrl).toBeDefined();
-        }));
+
 
     });
 });

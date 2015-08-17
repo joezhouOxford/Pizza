@@ -1,6 +1,6 @@
 'use strict';
-
-app.service('Pizza', function ($rootScope, $http) {
+angular.module('pizza.Pizza', ['ngRoute'])
+.service('Pizza', function ($rootScope, $http) {
     var self = {};
 
     self.total = 0; // total of all  pizza ingredient

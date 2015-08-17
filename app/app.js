@@ -1,17 +1,17 @@
 'use strict';
 
-var app = angular.module('pizza', ['ngRoute', 'ngResource','myApp.version']);
+var app=angular.module('pizza', ['ngRoute', 'ngResource','myApp.version','pizza.Ingredient','pizza.Pizza'])
 
-app.config(function ($routeProvider) {
+.config(function ($routeProvider) {
   $routeProvider
-      .when('/pizza', {
+      /*.when('/pizza', {
         templateUrl: 'pizza/Ingredient.html',
         controller: 'IngredientCtrl'
       })
       .when('/purchase', {
         templateUrl: 'purchase/purchase.html',
         controller: 'PurchaseCtrl'
-      })
+      })*/
 
       .otherwise({
         redirectTo: '/pizza'
