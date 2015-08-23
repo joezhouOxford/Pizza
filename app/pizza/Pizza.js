@@ -7,6 +7,9 @@ angular.module('pizza', ['ngRoute', 'ngResource', 'pizza.ingredient'])
                 templateUrl: 'pizza/Ingredient.html',
                 controller: 'IngredientCtrl'
             })
+            .otherwise({
+                redirectTo: '/pizza'
+            });
 
     }])
 
