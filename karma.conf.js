@@ -1,17 +1,17 @@
 module.exports = function (config) {
     config.set({
 
-        basePath: './',
+        basePath: 'app/',
 
         files: [
-            'app/bower/angular/angular.js',
-            'app/bower/angular-route/angular-route.js',
-            'app/bower/angular-mocks/angular-mocks.js',
-            'app/components/**/*.js'
-            ,
-             'app/pizza/**/*.js',
-            /*
-             'app/purchase/!**!/!*.js'*/
+            'bower/angular/angular.js',
+            'bower/angular-route/angular-route.js',
+            'bower/angular-resource/angular-resource.js',
+            'bower/angular-mocks/angular-mocks.js',
+            'app.js',
+            'components/**/*.js',
+            'pizza/**/*.js',
+            'pizza/*.html'
         ],
 
         autoWatch: true,
@@ -21,16 +21,23 @@ module.exports = function (config) {
         browsers: ['Chrome'],
 
         plugins: [
+            'karma-coverage',
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
             'karma-junit-reporter',
-            'karma-teamcity-reporter'
+            'karma-teamcity-reporter',
+            'karma-ng-html2js-preprocessor'
         ],
 
         junitReporter: {
             outputFile: 'test_out/unit.xml',
             suite: 'unit'
+        },
+        reporters: ['progress', 'coverage'],
+        preprocessors: {
+            'pizza/*.js': ['coverage'],
+            'pizza/*.html':['ng-html2js']
         }
 
     });
