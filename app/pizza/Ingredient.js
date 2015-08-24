@@ -3,9 +3,9 @@
 angular.module('pizza.ingredient', ['ngRoute'])
 
 
-    .factory('PizzaIngredient', function ($resource) {
+    .factory('PizzaIngredient', ['$resource',function ($resource) {
         return $resource('api/pizzaIngredient.json');
-    })
+    }])
     .controller('IngredientCtrl', ['$scope','PizzaIngredient', 'Pizza',function ($scope, PizzaIngredient, Pizza) {
         $scope.getIngredients=function(){
             PizzaIngredient
