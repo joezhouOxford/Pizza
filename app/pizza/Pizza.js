@@ -81,7 +81,7 @@ angular.module('pizza', ['ngRoute', 'ngResource', 'pizza.ingredient'])
                     }
                     break;
             }
-            setError("");
+            //setError("");
             return true;
         };
         self.hasBase = function () {
