@@ -9,12 +9,13 @@ The continues inegration is done with teamcity.
 The workflow which automated with above best practice is as follow
 1. develoepr pushi to github
 2. trigger integration tests (unit and e2e tests) with teamcity.
-3. after integration tests passes, deploy and change go live
+3. minification
+4. deploy the new code and change go live
 
-The teamcity url is http://137.116.198.227:1111//viewType.html?buildTypeId=PizzaCI_PizzaBuild
+The teamcity url is http://spengineeringltddns.cloudapp.net:1111//viewType.html?buildTypeId=PizzaCI_PizzaBuild
 username:admin
 password:password01
 
-the deployed app is at http://137.116.198.227:8000/
+the deployed app is at http://spengineeringltddns.cloudapp.net
 
-I was going to use webpack (like grunt) as dependency management tool and has run out of time.
+
