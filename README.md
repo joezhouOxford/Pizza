@@ -7,7 +7,7 @@ The unit test is done with jasmine and karma. The end to end test/system test is
 The continues inegration is done with teamcity.
 
 The workflow which automated with above best practice is as follow
-1. develoepr pushi to github
+1. developer push to github
 2. trigger integration tests (unit and e2e tests) with teamcity.
 3. minification
 4. deploy the new code and change go live
