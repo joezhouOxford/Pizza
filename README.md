@@ -18,4 +18,4 @@ password:password01
 
 the deployed app is at http://spengineeringltddns.cloudapp.net
 
-copyright in pizza
+copyright in mytest
